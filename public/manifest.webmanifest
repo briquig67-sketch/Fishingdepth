@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Victorian Boat Fishing Guide",
+  "short_name": "Vic Fishing",
+  "description": "Marine navigation, real charted depth soundings, live GPS tracking, and fishing spot guide for Port Phillip Bay and Western Port Bay, Victoria.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a192f",
+  "theme_color": "#0284c7",
+  "categories": ["navigation", "sports", "weather"],
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

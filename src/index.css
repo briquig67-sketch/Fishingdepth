@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* Leaflet Container & Popup Styling for Marine Dashboard */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background-color: #07192f !important;
+  font-family: inherit;
+}
+
+.custom-marine-popup .leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  border: 1px solid #0284c7;
+}
+
+.custom-marine-popup .leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.contour-tooltip {
+  background: rgba(10, 25, 47, 0.9) !important;
+  color: #38bdf8 !important;
+  border: 1px solid #0284c7 !important;
+  border-radius: 6px !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3) !important;
+}
+
+/* Night Red Vision Mode (Preserves scotopic night vision on water) */
+.night-red-mode {
+  filter: contrast(1.1);
+}
+.night-red-mode header {
+  background-color: #1a0004 !important;
+  border-color: #7f1d1d !important;
+}
+.night-red-mode .bg-slate-900,
+.night-red-mode .bg-slate-950 {
+  background-color: #160204 !important;
+  border-color: #881337 !important;
+}
+.night-red-mode .text-white,
+.night-red-mode .text-sky-300,
+.night-red-mode .text-sky-200 {
+  color: #fecdd3 !important;
+}
+.night-red-mode .bg-sky-600 {
+  background-color: #be123c !important;
+}
+
+/* Sunlight Glare Mode (High-contrast for outdoor boat console) */
+.sun-glare-mode {
+  filter: contrast(1.25) saturate(1.2);
+}
+.sun-glare-mode .text-slate-400 {
+  color: #fcd34d !important;
+}
+
+/* Radar ping animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Victorian Boat Fishing Guide",
+  "description": "Marine navigation, real charted depth soundings, live GPS tracking, and fishing spot guide for Port Phillip Bay and Western Port Bay, Victoria.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

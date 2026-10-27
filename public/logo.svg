@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="oceanBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    
+    <!-- Water Wave Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <!-- Deep Water Gradient -->
+    <linearGradient id="deepWaveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#082f49" />
+    </linearGradient>
+
+    <!-- Gold/Brass Compass Accents -->
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring / Nautical Bezel -->
+  <circle cx="256" cy="256" r="248" fill="url(#oceanBg)" stroke="#0284c7" stroke-width="8" />
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6,4" opacity="0.6" />
+
+  <!-- Compass Cardinal Ticks -->
+  <line x1="256" y1="16" x2="256" y2="34" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <line x1="256" y1="478" x2="256" y2="496" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <line x1="16" y1="256" x2="34" y2="256" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <line x1="478" y1="256" x2="496" y2="256" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Sky Glow / Moon or Sun behind Boat -->
+  <circle cx="256" cy="190" r="110" fill="#38bdf8" opacity="0.12" />
+
+  <!-- Victorian Offshore Cabin Fishing Boat -->
+  <!-- Hull -->
+  <g id="fishing-boat">
+    <!-- Cabin Structure -->
+    <path d="M190 205 L225 155 L285 155 L320 205 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2" />
+    <!-- Cabin Windows (ocean blue tinted) -->
+    <polygon points="205,200 228,165 250,165 245,200" fill="#0284c7" opacity="0.85" />
+    <polygon points="255,200 258,165 280,165 295,200" fill="#0284c7" opacity="0.85" />
+    
+    <!-- T-Top / Radar Arch / Rod Holders (Rocket Launchers) -->
+    <line x1="255" y1="155" x2="255" y2="120" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <!-- Radar Dome -->
+    <ellipse cx="255" cy="120" rx="14" ry="5" fill="#e2e8f0" stroke="#0284c7" stroke-width="1.5" />
+    <!-- Fishing Rods angled from T-Top -->
+    <line x1="230" y1="160" x2="195" y2="105" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="240" y1="160" x2="215" y2="98" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="270" y1="160" x2="295" y2="98" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="280" y1="160" x2="315" y2="105" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- VHF Marine Antenna -->
+    <line x1="225" y1="155" x2="185" y2="80" stroke="#f8fafc" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Boat Hull: Deep-V Victorian Offshore Center Console / Half Cabin -->
+    <path d="M120 240 Q150 245 220 248 L355 248 Q395 245 405 210 Q370 205 320 205 L150 205 Q125 218 120 240 Z" fill="#ffffff" />
+    <!-- Hull Ocean Blue Stripe -->
+    <path d="M130 235 Q180 240 355 240 L385 224 L360 216 L145 216 Z" fill="#0284c7" />
+    <!-- Outboard Engine on Transom -->
+    <rect x="115" y="222" width="22" height="38" rx="5" fill="#334155" stroke="#0284c7" stroke-width="1.5" />
+    <path d="M115 250 L108 268 L124 268 L125 250 Z" fill="#1e293b" />
+  </g>
+
+  <!-- Rolling Ocean Waves / Swell (Port Phillip & Western Port Waters) -->
+  <g id="waves">
+    <!-- Back Swell -->
+    <path d="M40 290 Q90 260 160 280 T280 275 T400 270 T475 285 L475 480 L40 480 Z" fill="url(#deepWaveGrad)" opacity="0.6" />
+    <!-- Mid Swell -->
+    <path d="M30 330 Q110 300 200 325 T360 310 T485 325 L485 480 L30 480 Z" fill="url(#waveGrad)" opacity="0.75" />
+    <!-- Foreground Water Surface with Crests -->
+    <path d="M25 365 C95 330 165 375 250 345 C335 315 410 360 487 340 L487 485 L25 485 Z" fill="#0369a1" />
+    <!-- Foam / Whitecaps -->
+    <path d="M150 338 Q180 330 215 340" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
+    <path d="M320 320 Q355 310 390 325" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
+  </g>
+
+  <!-- Leaping Victorian Snapper / Kingfish (Iconic Victoria Target Species) -->
+  <g id="leaping-fish" transform="translate(40, -10)">
+    <!-- Fish Body Arc -->
+    <!-- Tail Fin -->
+    <path d="M200 420 Q180 435 165 448 Q180 410 190 395 Q195 385 205 398 Z" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+    <!-- Main Body: Curved leaping posture -->
+    <path d="M200 400 Q230 365 280 355 Q340 345 370 375 Q390 395 385 415 Q360 435 300 430 Q240 425 200 400 Z" fill="#ffffff" stroke="#0284c7" stroke-width="3" />
+    <!-- Fish Pink/Snapper & Silver Ocean Gradient Shading -->
+    <path d="M225 395 Q265 370 320 362 Q360 370 375 390 Q345 385 290 395 Q250 405 225 395 Z" fill="#38bdf8" opacity="0.5" />
+    <!-- Characteristic Big Snapper Head / Nape -->
+    <path d="M340 362 Q375 370 385 390 Q388 405 375 415 Q355 405 345 385 Z" fill="#e0f2fe" />
+    <!-- Eye -->
+    <circle cx="365" cy="385" r="4.5" fill="#0f172a" stroke="#ffffff" stroke-width="1.5" />
+    <circle cx="366" cy="384" r="1.5" fill="#ffffff" />
+    <!-- Dorsal Fin Spines (Snapper spiky dorsal) -->
+    <path d="M255 365 L262 342 L275 360 L285 344 L298 358 L310 347 L325 360" stroke="#0284c7" stroke-width="3" fill="#38bdf8" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Pectoral Fin -->
+    <path d="M315 400 Q335 408 340 422 Q325 418 310 408 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5" />
+    <!-- Water Splashes around fish -->
+    <circle cx="175" cy="415" r="3" fill="#ffffff" opacity="0.8" />
+    <circle cx="160" cy="435" r="4" fill="#38bdf8" opacity="0.7" />
+    <circle cx="395" cy="410" r="3.5" fill="#ffffff" opacity="0.9" />
+    <circle cx="410" cy="425" r="2.5" fill="#38bdf8" opacity="0.8" />
+  </g>
+
+  <!-- App Title Banner Ring Text or Crest Indicator -->
+  <text x="256" y="475" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#38bdf8" letter-spacing="4">
+    VICTORIAN BOAT FISHING
+  </text>
+  <text x="256" y="72" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#ffffff" letter-spacing="3" opacity="0.9">
+    PORT PHILLIP • WESTERN PORT
+  </text>
+</svg>
